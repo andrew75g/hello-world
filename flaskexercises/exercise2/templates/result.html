@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <!-- Include your style.css here if needed -->
+</head>
+<body>
+    {% if result == 'no number provided' %}
+        <p>Error: No number provided. Please go back and enter a number.</p>
+    {% else %}
+        <p>The number {{ number }} is {{ result }}.</p>
+    {% endif %}
+    <a href="{{ url_for('home') }}">Check another number</a>
+</body>
+</html>

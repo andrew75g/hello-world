@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Checker</title>
+    <!-- Include your style.css here if needed -->
+</head>
+<body>
+    <form action="{{ url_for('result') }}" method="get">
+        <label for="number">Enter a number:</label>
+        <input type="text" id="number" name="number">
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include Bootstrap or custom CSS -->
+    <title>Registrations</title>
+</head>
+<body>
+    <h1>Registered Users</h1>
+    <ul>
+        {% for name, org in registrations.items() %}
+        <li>{{ name }} - {{ org }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('home') }}">Register Another User</a>
+</body>
+</html>
